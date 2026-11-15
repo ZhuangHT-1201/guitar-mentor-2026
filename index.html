@@ -580,6 +580,12 @@
       transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
 
+    .mentor-image--gallery {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr);
+      gap: 2px;
+    }
+
     .mentor-card:hover .mentor-image img,
     .mentor-card:has(input:checked) .mentor-image img {
       transform: scale(1.035);
@@ -657,6 +663,29 @@
       color: rgba(243, 239, 228, 0.66);
       font-size: 12px;
       line-height: 1.72;
+    }
+
+    .mentor-campus {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 0 11px;
+      padding: 4px 7px;
+      color: var(--lime);
+      border: 1px solid rgba(215, 255, 99, 0.28);
+      border-radius: 999px;
+      font-size: 9px;
+    }
+
+    .mentor-intro {
+      white-space: pre-line;
+    }
+
+    .intro-source {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(243, 239, 228, 0.46);
+      font-size: 9px;
+      letter-spacing: 0.08em;
     }
 
     .tags {
@@ -865,6 +894,57 @@
 
     .result-body {
       padding: 28px 34px 32px;
+      max-height: calc(100vh - 190px);
+      overflow-y: auto;
+    }
+
+    .selected-contacts {
+      margin-bottom: 18px;
+      padding: 16px;
+      border: 1px solid rgba(16, 19, 17, 0.14);
+      border-radius: 14px;
+      background: rgba(214, 255, 95, 0.18);
+    }
+
+    .selected-contacts[hidden] {
+      display: none;
+    }
+
+    .selected-contacts h4 {
+      margin: 0 0 11px;
+      font-family: var(--display);
+      font-size: 18px;
+    }
+
+    .selected-contact-list {
+      display: grid;
+      gap: 7px;
+    }
+
+    .selected-contact {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      padding-top: 7px;
+      border-top: 1px solid rgba(16, 19, 17, 0.1);
+      font-size: 12px;
+    }
+
+    .selected-contact span {
+      color: var(--muted);
+    }
+
+    .selected-contact strong {
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .selected-contacts p {
+      margin: 11px 0 0;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.6;
     }
 
     .summary-box {
@@ -1180,27 +1260,50 @@
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="曾子焱｜小众哥组">
                 <span class="mentor-image">
-                  <img src="mentor-zeng-ziyan.jpg" alt="">
+                  <img src="mentor-zeng-ziyan.jpg" alt="曾子焱弹奏电吉他">
                   <span class="mentor-index">01</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>曾子焱</strong><span>小众哥组</span></div>
-                  <p>四年电吉他经验，喜欢 Blues、Jazz、Funk 与 Rock。想和愿意探索和声、riff 与音色的人一起排练，也可以只是找一个地方把喜欢的冷门作品弹完。不要求你“小众”，只希望彼此尊重不同的音乐喜好。</p>
+                  <span class="mentor-campus">沙河校区</span>
+                  <div class="mentor-intro"><span class="intro-source">介绍原文</span>小众哥组招新：让每种喜欢都有地方发声
+
+“小众哥组”这个名字带点自嘲，也带点认真。我们已经一起走过一年：在琴房里排练、实验，在社团活动中演出，也经历过冷场和无人鼓掌的时刻。正因为办过这一年，我们更清楚一件事：一个吉他小组不该拿风格分高低，也不该拿听众多少定成败。我们想继续组一个尽量多元、彼此尊重的吉他小组：你可以喜欢主流，也可以喜欢冷门；可以弹唱，也可以只弹riff；可以迷恋和声色彩，也可以偏爱简单直接。只要认真喜欢音乐，这里都欢迎你。
+
+如果你曾觉得自己的爱好不太好安利，身边很少有人愿意听你弹完一首歌；如果你弹电吉他、贝斯，常常在吉他小组里被忽略；如果你被人叫过“伪文青”“小众哥”，或者也这样自嘲过；如果你把音乐当作一种语言，想用它表达自己的孤独、热情和想法，哪怕暂时无人接收——那你可以来看看这里。
+
+我们也欢迎这样的你：无论常弹流行歌曲还是冷门作品，都不影响你在这里弹琴；你可以喜欢常见的和弦进行，也可以想探索更多和声可能；可以喜欢三和弦的直接，也可以喜欢大七和弦的明亮温柔、属七和弦的距离感、挂留和弦的悬而未决、小七和弦的复杂微妙、减和弦的神秘不安；或者另一个方向，你觉得简单直接最痛快，喜欢强力和弦、单音riff，喜欢在一根弦上击勾滑推solo。对某一种音乐近乎狂热也好，一视同仁地欣赏不同类别也好，都可以。
+
+我们更看重的是：你愿意尊重差异，也愿意表达自己。能接受演出时可能冷场，不奢求掌声和关注，主要为追求爱好而演奏；需要一个输出自己的舞台，无论听众多少；认为弹得投入很重要，同时也尊重别人觉得好听的权利。
+
+加入后，你可以：
+
+· 在隔音良好的琴房里和大家一起排练、实验，制造属于我们的“噪音”；
+· 在社团内外演出中展示你真正喜欢的音乐，表达自己的个性；
+· 和资历尚浅的组长并肩作战、共同进步；
+· 拓宽音乐的边界，探索不同风格带来的更多可能；
+· 也可以只是安静地弹一会儿琴，找到几个愿意听的人。
+
+过去一年让我们知道，任何一种认真喜欢都值得被认真对待。暂时小众，不应成为被忽视的理由；主流，也不应成为被轻视的理由。不必羞于展示自己与众不同的一面，也不必为了显得特别而否定别人的喜好。我们希望营造一个充满包容的平台：不要求你“小众”，只要求你尊重差异；不要求所有人喜欢同一种声音，但允许每种声音都有被听见的机会。
+
+欢迎来弹，欢迎来听，欢迎来做你自己。</div>
                   <div class="tags"><span class="tag">电吉他</span><span class="tag">Blues</span><span class="tag">Jazz</span><span class="tag">Funk</span></div>
                 </div>
               </label>
 
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="何林达｜指弹弹唱·入门互助">
-                <span class="mentor-image">
-                  <img src="mentor-he-linda.jpg" alt="">
+                <span class="mentor-image mentor-image--gallery">
+                  <img src="mentor-he-linda.jpg" alt="何林达在舞台上演奏木吉他">
+                  <img src="hero-he-stage.jpg" alt="何林达在舞台上弹唱">
                   <span class="mentor-index">02</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>何林达</strong><span>指弹弹唱</span></div>
-                  <p>六年琴龄，指弹与弹唱都会一些，偏爱 R&amp;B、Pop、Jazz，也喜欢把喜爱的歌曲改编成自己的版本。可提供入门教学、基础答疑、曲目排练和练琴经验交流。</p>
+                  <span class="mentor-campus">沙河校区</span>
+                  <div class="mentor-intro"><span class="intro-source">介绍原文</span>各位琴友们好，我是何林达，琴龄六年，平时指弹和弹唱都会玩一些，喜欢的音乐风格是 R&amp;B、pop、Jazz 等，也会尝试改编一些喜欢的曲子。这里可以提供入门教学和小白答疑，也可以一起交流练琴经验，排练曲目，欢迎大家加入，共同进步！σ(゚ε゚σ)♫</div>
                   <div class="tags"><span class="tag">指弹</span><span class="tag">弹唱</span><span class="tag">R&amp;B</span><span class="tag">Jazz</span></div>
                 </div>
               </label>
@@ -1208,13 +1311,14 @@
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="孙铭扬｜风格鉴赏与技巧分享">
                 <span class="mentor-image">
-                  <img src="mentor-sun-mingyang.svg" alt="">
+                  <img src="mentor-sun-mingyang.jpg" alt="孙铭扬演奏电吉他">
                   <span class="mentor-index">03</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>孙铭扬</strong><span>风格分享</span></div>
-                  <p>四年琴龄，木吉他和电吉他都弹，常玩流行、R&amp;B、摇滚与布鲁斯，也有一定的乐器教学经验。适合想一起拆解风格、练习技巧，或希望有人帮着梳理练习方法的人。</p>
+                  <span class="mentor-campus">学院路校区</span>
+                  <div class="mentor-intro"><span class="intro-source">介绍原文</span>我是孙铭扬，来自学院路校区。因为偶然的机会，我接触到了吉他，并逐渐感受到其中的乐趣以及吉他的魅力。风格上，我爱好广泛：从流行、R&amp;B到摇滚、布鲁斯，只要是好听的音乐，我都愿意去学习、演奏；演奏形式上，我既喜欢拨片带来的清脆听感，也享受手指带来的动态与细节。除演奏之外，我也对创作感兴趣，喜欢研究一段旋律、一段和弦进行背后的乐理知识。总之，只要你热爱吉他、享受音乐，希望与同好们一起学习一起进步，就欢迎你加入我们的小组！</div>
                   <div class="tags"><span class="tag">Pop</span><span class="tag">R&amp;B</span><span class="tag">Rock</span><span class="tag">技巧分享</span></div>
                 </div>
               </label>
@@ -1222,27 +1326,30 @@
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="刘子锐｜民谣同好练琴">
                 <span class="mentor-image">
-                  <img src="mentor-liu-zirui.jpg" alt="">
+                  <img src="mentor-liu-zirui.jpg" alt="刘子锐在校园中">
                   <span class="mentor-index">04</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>刘子锐</strong><span>民谣同好</span></div>
-                  <p>七年民谣经验，主要喜欢宋冬野、赵雷等歌手的作品，想和兴趣相近的朋友一起练琴、交流，也期待在小组内部完成小型演出。</p>
+                  <span class="mentor-campus">沙河校区</span>
+                  <div class="mentor-intro"><span class="intro-source">介绍原文</span>哈啰，大家好，我叫刘子锐，学民谣六年啦，这次报名吉他梦拓主要想找到一些志趣相投的朋友，一起交流。本人主要喜欢宋冬野，赵雷等民谣歌手，如果有相似喜好的同学可以一起练琴交流，相互促进。如果能选择我，十分荣幸</div>
                   <div class="tags"><span class="tag">民谣</span><span class="tag">弹唱</span><span class="tag">宋冬野</span><span class="tag">赵雷</span></div>
                 </div>
               </label>
 
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="马文馨｜古典吉他慢练">
-                <span class="mentor-image">
-                  <img src="mentor-ma-wenxin.jpg" alt="">
+                <span class="mentor-image mentor-image--gallery">
+                  <img src="mentor-ma-wenxin.jpg" alt="马文馨在草原上弹奏古典吉他">
+                  <img src="ma-portrait.jpg" alt="马文馨在湖边">
                   <span class="mentor-index">05</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>马文馨</strong><span>古典慢练</span></div>
-                  <p>八年古典吉他经历，也会一点民谣。通常能在周五晚上留出 1–2 小时练琴，适合愿意慢下来处理基础、音色和完整曲目的同学。</p>
+                  <span class="mentor-campus">学院路校区</span>
+                  <div class="mentor-intro"><span class="intro-source">报名表信息（暂无单独文字介绍）</span>八年古典吉他经历，也会一点民谣。通常能在周五晚上留出 1–2 小时练琴，适合愿意慢下来处理基础、音色和完整曲目的同学。</div>
                   <div class="tags"><span class="tag">古典吉他</span><span class="tag">基础练习</span><span class="tag">周五晚</span></div>
                 </div>
               </label>
@@ -1250,13 +1357,14 @@
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="吴寻钟｜高还原流行指弹">
                 <span class="mentor-image">
-                  <img src="mentor-wu-xunzhong.jpg" alt="">
+                  <img src="mentor-wu-xunzhong.jpg" alt="吴寻钟在山间">
                   <span class="mentor-index">06</span>
                   <span class="mentor-check" aria-hidden="true">✓</span>
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>吴寻钟</strong><span>流行指弹</span></div>
-                  <p>计算机学院 26 级硕士新生，五年以上琴龄，喜欢指弹、弹唱与高还原度流行歌曲改编。希望和同好一起练琴，也想尝试组乐队、做技巧分享和小组演出。</p>
+                  <span class="mentor-campus">学院路校区</span>
+                  <div class="mentor-intro"><span class="intro-source">介绍原文</span>我叫吴寻钟，计算机学院26级硕士新生，平时喜欢弹吉他，打乒乓球。弹唱指弹都接触一点点，并且喜欢弹一些流行歌曲，特别热衷于高还原度的流行歌曲改编的指弹，欢迎有相同兴趣的朋友找我一起玩吉他～</div>
                   <div class="tags"><span class="tag">指弹</span><span class="tag">流行改编</span><span class="tag">乐队</span><span class="tag">演出</span></div>
                 </div>
               </label>
@@ -1333,6 +1441,11 @@
       <p id="result-message">复制下面这段文字，发送给社长或你选择的梦拓即可完成本次报名。</p>
     </div>
     <div class="result-body">
+      <section class="selected-contacts" id="selected-contacts" hidden>
+        <h4>你选择的梦拓联系方式</h4>
+        <div class="selected-contact-list" id="selected-contact-list"></div>
+        <p>可以直接添加对应微信号。若最终是否接纳需要确认，建议添加时备注“吉他梦拓报名＋姓名”。</p>
+      </section>
       <textarea class="summary-box" id="summary-box" readonly aria-label="报名信息摘要"></textarea>
       <div class="result-actions">
         <button class="button accent" id="copy-summary" type="button">复制报名信息</button>
@@ -1368,6 +1481,8 @@
       const resultMessage = document.querySelector("#result-message");
       const formModeNote = document.querySelector("#form-mode-note");
       const submitButton = form.querySelector('button[type="submit"]');
+      const selectedContacts = document.querySelector("#selected-contacts");
+      const selectedContactList = document.querySelector("#selected-contact-list");
       const storageKey = "guitar-mentor-2026-draft";
       let currentStep = 1;
       let toastTimer;
@@ -1395,6 +1510,39 @@
         availability: "可参加时间",
         activity: "期待的活动",
         consent: "报名说明"
+      };
+
+      const mentorDirectory = {
+        "曾子焱｜小众哥组": {
+          name: "曾子焱",
+          campus: "沙河校区",
+          wechat: "kingdavidz"
+        },
+        "何林达｜指弹弹唱·入门互助": {
+          name: "何林达",
+          campus: "沙河校区",
+          wechat: "obbbbbbbbobbbbobb"
+        },
+        "孙铭扬｜风格鉴赏与技巧分享": {
+          name: "孙铭扬",
+          campus: "学院路校区",
+          wechat: "keyframe_d4v1d_5"
+        },
+        "刘子锐｜民谣同好练琴": {
+          name: "刘子锐",
+          campus: "沙河校区",
+          wechat: "lzr17139313070"
+        },
+        "马文馨｜古典吉他慢练": {
+          name: "马文馨",
+          campus: "学院路校区",
+          wechat: "mwx15293194350"
+        },
+        "吴寻钟｜高还原流行指弹": {
+          name: "吴寻钟",
+          campus: "学院路校区",
+          wechat: "wxz_320780237"
+        }
       };
 
       function showToast(message) {
@@ -1494,6 +1642,12 @@
 
       function collectSummary() {
         const pickedMentors = valuesOf("mentor");
+        const contactLines = pickedMentors.map((mentor) => {
+          const contact = mentorDirectory[mentor];
+          return contact
+            ? `${contact.name}（${contact.campus}）｜微信：${contact.wechat}`
+            : mentor;
+        });
         return [
           "【2026 吉他梦拓成员报名】",
           `姓名：${form.elements.name.value.trim()}`,
@@ -1507,6 +1661,9 @@
           `可参加时间：${valuesOf("availability").join("、")}`,
           `期待活动：${valuesOf("activity").join("、")}`,
           `想一起弹 / 想说的话：${noteInput.value.trim() || "暂无"}`,
+          "",
+          "【所选梦拓联系方式】",
+          ...contactLines,
           "",
           "我已知悉微信号仅用于本次梦拓活动联络。"
         ].join("\n");
@@ -1554,6 +1711,21 @@
       }
 
       function openResult(remoteSuccess) {
+        const contacts = valuesOf("mentor")
+          .map((mentor) => mentorDirectory[mentor])
+          .filter(Boolean);
+        selectedContactList.replaceChildren();
+        contacts.forEach((contact) => {
+          const row = document.createElement("div");
+          row.className = "selected-contact";
+          const identity = document.createElement("span");
+          identity.textContent = `${contact.name} · ${contact.campus}`;
+          const wechat = document.createElement("strong");
+          wechat.textContent = `微信：${contact.wechat}`;
+          row.append(identity, wechat);
+          selectedContactList.append(row);
+        });
+        selectedContacts.hidden = contacts.length === 0;
         summaryBox.value = collectSummary();
         if (remoteSuccess) {
           resultKicker.textContent = "REGISTRATION / RECEIVED";
