@@ -1,0 +1,1709 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101311">
+  <title>2026 吉他梦拓成员报名｜指舞吉他社</title>
+  <style>
+    :root {
+      --ink: #101311;
+      --ink-soft: #1b201d;
+      --paper: #f3efe4;
+      --paper-deep: #e7dfcf;
+      --lime: #d6ff5f;
+      --lime-dark: #8fb620;
+      --coral: #ff6a48;
+      --blue: #94d8ff;
+      --muted: #6e746e;
+      --line: rgba(16, 19, 17, 0.14);
+      --white: #fffdf8;
+      --display: "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+      --sans: "Noto Sans SC", "Microsoft YaHei UI", "PingFang SC", sans-serif;
+      --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --shadow: 0 24px 80px rgba(16, 19, 17, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 86% 9%, rgba(214, 255, 95, 0.42), transparent 19rem),
+        var(--paper);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 16px;
+      top: -80px;
+      z-index: 99;
+      padding: 10px 14px;
+      color: var(--ink);
+      background: var(--lime);
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .page-shell {
+      display: grid;
+      grid-template-columns: minmax(340px, 0.82fr) minmax(520px, 1.18fr);
+      width: min(1380px, calc(100% - 42px));
+      min-height: calc(100vh - 42px);
+      margin: 21px auto;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.64);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .story-panel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: clamp(28px, 4vw, 58px);
+      overflow: hidden;
+      color: var(--paper);
+      background:
+        linear-gradient(180deg, rgba(16, 19, 17, 0.06), rgba(16, 19, 17, 0.9)),
+        url("hero-he-stage.jpg") center 34% / cover no-repeat,
+        var(--ink);
+      isolation: isolate;
+    }
+
+    .story-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(115deg, rgba(16, 19, 17, 0.9) 0 26%, rgba(16, 19, 17, 0.3) 52%, rgba(16, 19, 17, 0.76) 100%),
+        linear-gradient(0deg, rgba(16, 19, 17, 0.8), transparent 58%);
+    }
+
+    .story-panel::after {
+      content: "";
+      position: absolute;
+      top: -18%;
+      right: -38%;
+      width: 82%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(214, 255, 95, 0.38);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 55px rgba(214, 255, 95, 0.035),
+        0 0 0 112px rgba(214, 255, 95, 0.025);
+      pointer-events: none;
+    }
+
+    .brand-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-mark::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--lime);
+      box-shadow: 0 0 18px rgba(214, 255, 95, 0.8);
+    }
+
+    .brand-line span:last-child {
+      color: rgba(243, 239, 228, 0.62);
+    }
+
+    .story-copy {
+      margin: auto 0;
+      padding: 12vh 0 7vh;
+      max-width: 610px;
+    }
+
+    .edition {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      padding: 8px 12px 7px;
+      color: var(--lime);
+      border: 1px solid rgba(214, 255, 95, 0.42);
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+    }
+
+    .story-copy h1 {
+      margin: 0;
+      max-width: 8em;
+      font-family: var(--display);
+      font-size: clamp(48px, 6.2vw, 88px);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.042em;
+      text-wrap: balance;
+    }
+
+    .story-copy h1 em {
+      color: var(--lime);
+      font-style: normal;
+    }
+
+    .story-copy p {
+      max-width: 30em;
+      margin: 28px 0 0;
+      color: rgba(243, 239, 228, 0.78);
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    .story-facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .fact {
+      min-height: 104px;
+      padding: 16px 16px 14px;
+      border: 1px solid rgba(243, 239, 228, 0.14);
+      border-radius: var(--radius-md);
+      background: rgba(16, 19, 17, 0.34);
+      backdrop-filter: blur(8px);
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--paper);
+      font-family: var(--display);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .fact span {
+      color: rgba(243, 239, 228, 0.58);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .story-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 24px;
+      color: rgba(243, 239, 228, 0.55);
+      font-size: 11px;
+    }
+
+    .story-footer a {
+      color: var(--paper);
+      text-decoration-color: rgba(243, 239, 228, 0.3);
+      text-underline-offset: 4px;
+    }
+
+    .form-panel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: clamp(24px, 4vw, 54px);
+      background:
+        linear-gradient(rgba(16, 19, 17, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 19, 17, 0.035) 1px, transparent 1px),
+        var(--white);
+      background-size: 42px 42px;
+    }
+
+    .form-panel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--lime) 0 58%, var(--coral) 58% 76%, var(--blue) 76%);
+    }
+
+    .form-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .form-kicker {
+      margin: 0 0 7px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .form-top h2 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.18;
+      letter-spacing: -0.035em;
+    }
+
+    .time-chip {
+      flex: 0 0 auto;
+      padding: 9px 11px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, 0.86);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .progress-wrap {
+      margin-bottom: 28px;
+    }
+
+    .progress-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .progress-meta strong {
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .progress-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+    }
+
+    .progress-segment {
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(16, 19, 17, 0.08);
+    }
+
+    .progress-segment::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--ink);
+      transform: translateX(-105%);
+      transition: transform 420ms cubic-bezier(0.2, 0.85, 0.2, 1);
+    }
+
+    .progress-segment.is-complete::after,
+    .progress-segment.is-active::after {
+      transform: translateX(0);
+    }
+
+    .progress-segment.is-active::after {
+      background: linear-gradient(90deg, var(--lime-dark), var(--lime));
+    }
+
+    .step {
+      animation: step-in 380ms cubic-bezier(0.18, 0.88, 0.22, 1) both;
+    }
+
+    .step[hidden] {
+      display: none;
+    }
+
+    .step-intro {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    fieldset {
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      width: 100%;
+      margin: 0 0 8px;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .required {
+      margin-left: 5px;
+      color: var(--coral);
+    }
+
+    .hint {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px 18px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field > label {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .field small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .text-input,
+    .text-area {
+      width: 100%;
+      color: var(--ink);
+      border: 1px solid rgba(16, 19, 17, 0.18);
+      border-radius: var(--radius-sm);
+      outline: 0;
+      background: rgba(255, 253, 248, 0.9);
+      transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .text-input {
+      height: 52px;
+      padding: 0 15px;
+    }
+
+    .text-area {
+      min-height: 108px;
+      padding: 14px 15px;
+      line-height: 1.7;
+      resize: vertical;
+    }
+
+    .text-input::placeholder,
+    .text-area::placeholder {
+      color: #9a9e99;
+    }
+
+    .text-input:focus,
+    .text-area:focus {
+      border-color: var(--ink);
+      background: var(--white);
+      box-shadow: 0 0 0 4px rgba(214, 255, 95, 0.48);
+    }
+
+    .reveal {
+      margin-bottom: 28px;
+    }
+
+    .choice-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .choice {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 13px;
+      cursor: pointer;
+      user-select: none;
+      color: var(--ink);
+      border: 1px solid rgba(16, 19, 17, 0.16);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, 0.86);
+      font-size: 13px;
+      transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
+    }
+
+    .choice:hover {
+      border-color: rgba(16, 19, 17, 0.42);
+      transform: translateY(-1px);
+    }
+
+    .choice:has(input:checked) {
+      color: var(--ink);
+      border-color: var(--ink);
+      background: var(--lime);
+    }
+
+    .choice input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .choice:has(input:focus-visible) {
+      outline: 3px solid rgba(148, 216, 255, 0.85);
+      outline-offset: 2px;
+    }
+
+    .mentor-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mentor-card {
+      position: relative;
+      min-width: 0;
+      overflow: hidden;
+      cursor: pointer;
+      color: var(--paper);
+      border: 1px solid rgba(16, 19, 17, 0.13);
+      border-radius: var(--radius-md);
+      background: var(--ink);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      isolation: isolate;
+    }
+
+    .mentor-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(16, 19, 17, 0.14);
+    }
+
+    .mentor-card:has(input:checked) {
+      border-color: var(--lime);
+      box-shadow: 0 0 0 3px var(--lime), 0 16px 32px rgba(16, 19, 17, 0.15);
+    }
+
+    .mentor-card input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+
+    .mentor-card:has(input:focus-visible) {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    .mentor-image {
+      position: relative;
+      display: block;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #1a1f1b;
+    }
+
+    .mentor-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(16, 19, 17, 0.72), transparent 58%);
+    }
+
+    .mentor-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .mentor-card:hover .mentor-image img,
+    .mentor-card:has(input:checked) .mentor-image img {
+      transform: scale(1.035);
+    }
+
+    .mentor-index {
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      left: 10px;
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      color: var(--ink);
+      border-radius: 50%;
+      background: var(--lime);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .mentor-check {
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      right: 10px;
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      color: transparent;
+      border: 1px solid rgba(243, 239, 228, 0.58);
+      border-radius: 50%;
+      background: rgba(16, 19, 17, 0.42);
+      font-size: 15px;
+      transition: background 150ms ease, color 150ms ease, transform 180ms cubic-bezier(0.2, 1.4, 0.3, 1);
+    }
+
+    .mentor-card:has(input:checked) .mentor-check {
+      color: var(--ink);
+      border-color: var(--lime);
+      background: var(--lime);
+      transform: scale(1.06);
+    }
+
+    .mentor-body {
+      padding: 15px 16px 17px;
+    }
+
+    .mentor-name {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+
+    .mentor-name strong {
+      font-family: var(--display);
+      font-size: 19px;
+      letter-spacing: -0.02em;
+    }
+
+    .mentor-name span {
+      color: var(--lime);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .mentor-body p {
+      margin: 0 0 10px;
+      color: rgba(243, 239, 228, 0.66);
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      padding: 4px 7px;
+      color: rgba(243, 239, 228, 0.76);
+      border: 1px solid rgba(243, 239, 228, 0.14);
+      border-radius: 999px;
+      font-size: 9px;
+    }
+
+    .selection-count {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 8px;
+      color: var(--muted);
+      border-radius: 999px;
+      background: rgba(16, 19, 17, 0.055);
+      font-size: 11px;
+    }
+
+    .selection-count strong {
+      color: var(--ink);
+      font-family: var(--mono);
+    }
+
+    .form-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 0 20px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: transform 120ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .button:active {
+      transform: scale(0.98);
+    }
+
+    .button.primary {
+      margin-left: auto;
+      color: var(--paper);
+      background: var(--ink);
+      box-shadow: 0 10px 26px rgba(16, 19, 17, 0.18);
+    }
+
+    .button.primary:hover {
+      box-shadow: 0 14px 32px rgba(16, 19, 17, 0.24);
+      transform: translateY(-1px);
+    }
+
+    .button.accent {
+      color: var(--ink);
+      background: var(--lime);
+    }
+
+    .button.ghost {
+      color: var(--ink);
+      border-color: rgba(16, 19, 17, 0.16);
+      background: transparent;
+    }
+
+    .button[disabled] {
+      cursor: not-allowed;
+      opacity: 0.48;
+      transform: none;
+    }
+
+    .button .arrow {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .form-note {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .error-summary {
+      display: none;
+      margin: 0 0 18px;
+      padding: 12px 14px;
+      color: #8a2d1d;
+      border: 1px solid rgba(255, 106, 72, 0.35);
+      border-radius: 12px;
+      background: rgba(255, 106, 72, 0.08);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .error-summary.is-visible {
+      display: block;
+      animation: shake 280ms ease;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      z-index: 80;
+      width: max-content;
+      max-width: calc(100% - 32px);
+      padding: 12px 16px;
+      color: var(--paper);
+      border: 1px solid rgba(243, 239, 228, 0.18);
+      border-radius: 12px;
+      background: rgba(16, 19, 17, 0.94);
+      box-shadow: 0 12px 36px rgba(16, 19, 17, 0.22);
+      font-size: 13px;
+      transform: translate(-50%, 20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 220ms ease, opacity 220ms ease;
+    }
+
+    .toast.is-visible {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+
+    .result-dialog {
+      width: min(760px, calc(100% - 32px));
+      max-height: min(820px, calc(100vh - 32px));
+      margin: auto;
+      padding: 0;
+      overflow: hidden;
+      color: var(--ink);
+      border: 0;
+      border-radius: 26px;
+      background: var(--paper);
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.36);
+    }
+
+    .result-dialog::backdrop {
+      background: rgba(7, 9, 8, 0.76);
+      backdrop-filter: blur(8px);
+    }
+
+    .result-header {
+      position: relative;
+      padding: 32px 34px 27px;
+      overflow: hidden;
+      color: var(--paper);
+      background: var(--ink);
+    }
+
+    .result-header::after {
+      content: "PLAY";
+      position: absolute;
+      right: -8px;
+      bottom: -36px;
+      color: rgba(214, 255, 95, 0.12);
+      font-family: var(--mono);
+      font-size: 128px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .result-header span {
+      color: var(--lime);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+    }
+
+    .result-header h3 {
+      position: relative;
+      z-index: 1;
+      margin: 10px 0 8px;
+      font-family: var(--display);
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .result-header p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: rgba(243, 239, 228, 0.62);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .result-body {
+      padding: 28px 34px 32px;
+    }
+
+    .summary-box {
+      width: 100%;
+      min-height: 240px;
+      max-height: 340px;
+      overflow: auto;
+      padding: 18px;
+      color: var(--ink);
+      border: 1px solid rgba(16, 19, 17, 0.14);
+      border-radius: 14px;
+      background: var(--white);
+      font-family: var(--mono);
+      font-size: 12px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+
+    .result-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .result-actions .button.primary {
+      margin-left: 0;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    @keyframes step-in {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      30% { transform: translateX(-4px); }
+      65% { transform: translateX(4px); }
+    }
+
+    @media (max-width: 1020px) {
+      .page-shell {
+        grid-template-columns: 1fr;
+        width: min(760px, calc(100% - 28px));
+        margin: 14px auto;
+      }
+
+      .story-panel {
+        min-height: 620px;
+      }
+
+      .story-copy {
+        padding: 100px 0 70px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        background: var(--paper);
+      }
+
+      .page-shell {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .story-panel {
+        min-height: 580px;
+        padding: 24px 22px 22px;
+      }
+
+      .brand-line {
+        font-size: 10px;
+      }
+
+      .story-copy {
+        padding: 74px 0 58px;
+      }
+
+      .story-copy h1 {
+        font-size: clamp(44px, 14vw, 66px);
+      }
+
+      .story-copy p {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .story-facts {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+      }
+
+      .fact {
+        min-height: 88px;
+        padding: 12px 10px;
+      }
+
+      .fact strong {
+        font-size: 20px;
+      }
+
+      .fact span {
+        font-size: 10px;
+      }
+
+      .story-footer {
+        font-size: 10px;
+      }
+
+      .form-panel {
+        padding: 28px 20px 34px;
+      }
+
+      .form-top {
+        gap: 12px;
+      }
+
+      .time-chip {
+        display: none;
+      }
+
+      .field-grid,
+      .mentor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .choice-row {
+        gap: 8px;
+      }
+
+      .choice {
+        min-height: 40px;
+        padding: 8px 11px;
+        font-size: 12px;
+      }
+
+      .form-actions {
+        align-items: stretch;
+      }
+
+      .button {
+        min-height: 48px;
+      }
+
+      .form-actions .button.ghost {
+        flex: 0 0 92px;
+      }
+
+      .result-body,
+      .result-header {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .result-actions .button {
+        flex: 1 1 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#registration-form">跳到报名表单</a>
+
+  <main class="page-shell">
+    <aside class="story-panel" aria-label="活动介绍">
+      <div class="brand-line">
+        <span class="brand-mark">指舞吉他社 BUAA</span>
+        <span>Guitar Mentor Program</span>
+      </div>
+
+      <div class="story-copy">
+        <span class="edition">2026 / 吉他梦拓计划</span>
+        <h1>把下一首歌，<br>一起<em>弹完</em>。</h1>
+        <p>不必先成为“很厉害的人”。选一个想一起弹的方向，找到愿意固定见面、认真练完一首歌的伙伴。</p>
+      </div>
+
+      <div class="story-facts" aria-label="报名概况">
+        <div class="fact"><strong>06</strong><span>候选梦拓小组<br>不同风格，各自开场</span></div>
+        <div class="fact"><strong>3 min</strong><span>预计填写时间<br>三步完成音乐匹配</span></div>
+        <div class="fact"><strong>2 picks</strong><span>最多选择两组<br>也可接受相似方向调剂</span></div>
+      </div>
+
+      <div class="story-footer">
+        <span>你的信息只用于本次活动匹配</span>
+        <a href="#">先看今年的梦拓 →</a>
+      </div>
+    </aside>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <header class="form-top">
+        <div>
+          <p class="form-kicker">Member Registration / 2026</p>
+          <h2 id="form-title">2026 梦拓成员报名</h2>
+        </div>
+        <span class="time-chip">约 3 分钟</span>
+      </header>
+
+      <div class="progress-wrap" aria-label="填写进度">
+        <div class="progress-meta">
+          <span id="step-label">第 1 步，共 3 步 · 先认识你</span>
+          <strong id="progress-percent">33%</strong>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span class="progress-segment is-active"></span>
+          <span class="progress-segment"></span>
+          <span class="progress-segment"></span>
+        </div>
+      </div>
+
+      <div id="error-summary" class="error-summary" role="alert" aria-live="polite"></div>
+
+      <form id="registration-form" novalidate>
+        <section class="step" data-step="1" aria-labelledby="step-1-title">
+          <h3 id="step-1-title" class="visually-hidden">基本信息</h3>
+          <p class="step-intro">先留下能联系到你的信息。学号只用于核对在校身份，不会公开展示。</p>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">姓名<span class="required">*</span></label>
+              <input class="text-input" id="name" name="name" type="text" autocomplete="name" placeholder="请输入真实姓名" required>
+            </div>
+            <div class="field">
+              <label for="student-id">学号<span class="required">*</span></label>
+              <input class="text-input" id="student-id" name="studentId" type="text" inputmode="numeric" autocomplete="off" placeholder="如 2026xxxxxx" required>
+            </div>
+            <div class="field full">
+              <label for="department">年级与学院<span class="required">*</span></label>
+              <input class="text-input" id="department" name="department" type="text" autocomplete="organization-title" placeholder="如 26级 计算机学院" required>
+            </div>
+            <div class="field full">
+              <label for="wechat">可添加的微信号<span class="required">*</span></label>
+              <input class="text-input" id="wechat" name="wechat" type="text" autocomplete="off" placeholder="请确认允许通过微信号搜索到你" required>
+              <small>梦拓会根据这里的信息添加你，请检查大小写与下划线。</small>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <span></span>
+            <button class="button primary" type="button" data-next="2">下一步：选一种声音 <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <section class="step" data-step="2" aria-labelledby="step-2-title" hidden>
+          <h3 id="step-2-title" class="visually-hidden">音乐偏好</h3>
+          <p class="step-intro">不用给自己贴“专业”或“业余”的标签。告诉我们就好：你现在怎么弹，想和谁一起弹。</p>
+
+          <fieldset class="reveal" id="experience-field">
+            <legend>你的琴龄大概是<span class="required">*</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="experience" value="0–1 年" required>0–1 年</label>
+              <label class="choice"><input type="radio" name="experience" value="1–3 年">1–3 年</label>
+              <label class="choice"><input type="radio" name="experience" value="3–5 年">3–5 年</label>
+              <label class="choice"><input type="radio" name="experience" value="5 年以上">5 年以上</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="reveal" id="style-field">
+            <legend>你现在最常练习<span class="required">*</span></legend>
+            <p class="hint">可多选，选你真正想继续玩的方向就可以。</p>
+            <div class="choice-row">
+              <label class="choice"><input type="checkbox" name="style" value="民谣弹唱">民谣弹唱</label>
+              <label class="choice"><input type="checkbox" name="style" value="指弹">指弹</label>
+              <label class="choice"><input type="checkbox" name="style" value="古典吉他">古典吉他</label>
+              <label class="choice"><input type="checkbox" name="style" value="电吉他">电吉他</label>
+              <label class="choice"><input type="checkbox" name="style" value="乐队 / 合奏">乐队 / 合奏</label>
+              <label class="choice"><input type="checkbox" name="style" value="刚入门，想系统学习">刚入门，想系统学习</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="reveal" id="mentor-field">
+            <legend>想加入哪两个梦拓小组<span class="required">*</span></legend>
+            <p class="hint">最多选 2 个。不是面试志愿，我们会优先结合你的风格与可参加时段做匹配。</p>
+            <div class="mentor-grid">
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="曾子焱｜小众哥组">
+                <span class="mentor-image">
+                  <img src="mentor-zeng-ziyan.jpg" alt="">
+                  <span class="mentor-index">01</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>曾子焱</strong><span>小众哥组</span></div>
+                  <p>电吉他、和声色彩与风格实验。让认真喜欢，不必成为一个人的事。</p>
+                  <div class="tags"><span class="tag">电吉他</span><span class="tag">Blues</span><span class="tag">Jazz</span><span class="tag">Funk</span></div>
+                </div>
+              </label>
+
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="何林达｜指弹弹唱·入门互助">
+                <span class="mentor-image">
+                  <img src="mentor-he-linda.jpg" alt="">
+                  <span class="mentor-index">02</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>何林达</strong><span>指弹弹唱</span></div>
+                  <p>六年琴龄，可做入门教学、小白答疑与曲目改编交流。</p>
+                  <div class="tags"><span class="tag">指弹</span><span class="tag">弹唱</span><span class="tag">R&amp;B</span><span class="tag">Jazz</span></div>
+                </div>
+              </label>
+
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="孙铭扬｜风格鉴赏与技巧分享">
+                <span class="mentor-image">
+                  <img src="mentor-sun-mingyang.svg" alt="">
+                  <span class="mentor-index">03</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>孙铭扬</strong><span>风格分享</span></div>
+                  <p>木电双修，喜欢流行、R&amp;B、摇滚与布鲁斯，也愿意分享教学经验。</p>
+                  <div class="tags"><span class="tag">Pop</span><span class="tag">R&amp;B</span><span class="tag">Rock</span><span class="tag">技巧分享</span></div>
+                </div>
+              </label>
+
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="刘子锐｜民谣同好练琴">
+                <span class="mentor-image">
+                  <img src="mentor-liu-zirui.jpg" alt="">
+                  <span class="mentor-index">04</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>刘子锐</strong><span>民谣同好</span></div>
+                  <p>七年民谣经验，喜欢宋冬野、赵雷，想找同好一起练琴与交流。</p>
+                  <div class="tags"><span class="tag">民谣</span><span class="tag">弹唱</span><span class="tag">宋冬野</span><span class="tag">赵雷</span></div>
+                </div>
+              </label>
+
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="马文馨｜古典吉他慢练">
+                <span class="mentor-image">
+                  <img src="mentor-ma-wenxin.jpg" alt="">
+                  <span class="mentor-index">05</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>马文馨</strong><span>古典慢练</span></div>
+                  <p>八年古典吉他经历，可约周五晚间 1–2 小时一起练琴。</p>
+                  <div class="tags"><span class="tag">古典吉他</span><span class="tag">基础练习</span><span class="tag">周五晚</span></div>
+                </div>
+              </label>
+
+              <label class="mentor-card">
+                <input type="checkbox" name="mentor" value="吴寻钟｜高还原流行指弹">
+                <span class="mentor-image">
+                  <img src="mentor-wu-xunzhong.jpg" alt="">
+                  <span class="mentor-index">06</span>
+                  <span class="mentor-check" aria-hidden="true">✓</span>
+                </span>
+                <div class="mentor-body">
+                  <div class="mentor-name"><strong>吴寻钟</strong><span>流行指弹</span></div>
+                  <p>指弹、弹唱与高还原度流行改编，也想组乐队、办小型演出。</p>
+                  <div class="tags"><span class="tag">指弹</span><span class="tag">流行改编</span><span class="tag">乐队</span><span class="tag">演出</span></div>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button ghost" type="button" data-prev="1">返回</button>
+            <span class="selection-count">已选 <strong id="mentor-count">0</strong> / 2 个小组</span>
+            <button class="button primary" type="button" data-next="3">下一步：约个时间 <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <section class="step" data-step="3" aria-labelledby="step-3-title" hidden>
+          <h3 id="step-3-title" class="visually-hidden">时间与匹配</h3>
+          <p class="step-intro">最后一步，帮我们把“喜欢”落到一个真的能见面的时段里。</p>
+
+          <fieldset class="reveal" id="availability-field">
+            <legend>你通常能参加的时间<span class="required">*</span></legend>
+            <p class="hint">可多选；不确定也可以先勾选大部分能到的时段。</p>
+            <div class="choice-row">
+              <label class="choice"><input type="checkbox" name="availability" value="工作日午后">工作日午后</label>
+              <label class="choice"><input type="checkbox" name="availability" value="工作日晚上">工作日晚上</label>
+              <label class="choice"><input type="checkbox" name="availability" value="周五晚上">周五晚上</label>
+              <label class="choice"><input type="checkbox" name="availability" value="周六白天">周六白天</label>
+              <label class="choice"><input type="checkbox" name="availability" value="周六晚上">周六晚上</label>
+              <label class="choice"><input type="checkbox" name="availability" value="周日白天 / 晚上">周日白天 / 晚上</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="reveal" id="activity-field">
+            <legend>你期待的小组活动<span class="required">*</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="checkbox" name="activity" value="定期一起练琴">定期一起练琴</label>
+              <label class="choice"><input type="checkbox" name="activity" value="技巧与乐理分享">技巧与乐理分享</label>
+              <label class="choice"><input type="checkbox" name="activity" value="曲目拆解与改编">曲目拆解与改编</label>
+              <label class="choice"><input type="checkbox" name="activity" value="组乐队 / 合奏">组乐队 / 合奏</label>
+              <label class="choice"><input type="checkbox" name="activity" value="小型演出 / Jam">小型演出 / Jam</label>
+              <label class="choice"><input type="checkbox" name="activity" value="风格鉴赏与听歌">风格鉴赏与听歌</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="reveal" id="match-field">
+            <legend>如果首选小组满员，接受相似方向调剂吗<span class="required">*</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="match" value="愿意调剂" required>愿意，优先帮我找到合适的小组</label>
+              <label class="choice"><input type="radio" name="match" value="先沟通">先和我沟通再决定</label>
+              <label class="choice"><input type="radio" name="match" value="不考虑调剂">只考虑我选择的小组</label>
+            </div>
+          </fieldset>
+
+          <div class="field reveal">
+            <label for="note">想一起弹的一首歌，或想对新伙伴说的话</label>
+            <textarea class="text-area" id="note" name="note" maxlength="300" placeholder="比如：想一起练《晴天》；还是新手，希望能有人带着走完第一首完整的歌。"></textarea>
+            <small><span id="note-count">0</span> / 300</small>
+          </div>
+
+          <fieldset class="reveal" id="consent-field">
+            <legend class="hint">报名说明</legend>
+            <label class="choice" style="width: 100%; border-radius: 14px; align-items: flex-start; line-height: 1.6;">
+              <input type="checkbox" name="consent" required>
+              <span>我知悉微信号将提供给本次活动的梦拓，仅用于活动联络；若最终未匹配到小组，社团将只保留必要的报名记录。</span>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button ghost" type="button" data-prev="2">返回</button>
+            <button class="button primary" type="submit">检查并生成报名信息 <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+
+          <p class="form-note" id="form-mode-note">当前网页版会将填写内容整理成一段文字，便于发送给社长或对应梦拓；正式集中收集请使用同目录的「问卷星一键创建版.txt」发布在线问卷。</p>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="result-dialog" id="result-dialog">
+    <div class="result-header">
+      <span id="result-kicker">REGISTRATION / READY</span>
+      <h3 id="result-title">你的报名信息已经整理好了</h3>
+      <p id="result-message">复制下面这段文字，发送给社长或你选择的梦拓即可完成本次报名。</p>
+    </div>
+    <div class="result-body">
+      <textarea class="summary-box" id="summary-box" readonly aria-label="报名信息摘要"></textarea>
+      <div class="result-actions">
+        <button class="button accent" id="copy-summary" type="button">复制报名信息</button>
+        <button class="button ghost" id="download-summary" type="button">下载为 txt</button>
+        <button class="button ghost" id="close-dialog" type="button">继续修改</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="supabase-config.js"></script>
+  <script>
+    (() => {
+      const remoteConfig = window.GUITAR_MENTOR_SUPABASE || {};
+      const remoteEnabled = Boolean(remoteConfig.url && remoteConfig.publishableKey);
+      const remoteEndpoint = remoteEnabled
+        ? `${remoteConfig.url.replace(/\/$/, "")}/rest/v1/guitar_mentor_registrations`
+        : "";
+      const form = document.querySelector("#registration-form");
+      const steps = [...document.querySelectorAll(".step")];
+      const segments = [...document.querySelectorAll(".progress-segment")];
+      const stepLabel = document.querySelector("#step-label");
+      const progressPercent = document.querySelector("#progress-percent");
+      const errorSummary = document.querySelector("#error-summary");
+      const mentorInputs = [...document.querySelectorAll('input[name="mentor"]')];
+      const mentorCount = document.querySelector("#mentor-count");
+      const noteInput = document.querySelector("#note");
+      const noteCount = document.querySelector("#note-count");
+      const toast = document.querySelector("#toast");
+      const dialog = document.querySelector("#result-dialog");
+      const summaryBox = document.querySelector("#summary-box");
+      const resultKicker = document.querySelector("#result-kicker");
+      const resultTitle = document.querySelector("#result-title");
+      const resultMessage = document.querySelector("#result-message");
+      const formModeNote = document.querySelector("#form-mode-note");
+      const submitButton = form.querySelector('button[type="submit"]');
+      const storageKey = "guitar-mentor-2026-draft";
+      let currentStep = 1;
+      let toastTimer;
+      let submitting = false;
+
+      if (remoteEnabled) {
+        formModeNote.textContent =
+          "提交后会直接上传到社团的 Supabase 数据库，只有社长可查看答卷。请确认微信号可用于本次梦拓联络。";
+      }
+
+      const labels = {
+        1: "第 1 步，共 3 步 · 先认识你",
+        2: "第 2 步，共 3 步 · 选一种声音",
+        3: "第 3 步，共 3 步 · 约个时间"
+      };
+
+      const fieldLabels = {
+        name: "姓名",
+        studentId: "学号",
+        department: "年级与学院",
+        wechat: "微信号",
+        mentor: "梦拓小组",
+        style: "练习方向",
+        availability: "可参加时间",
+        activity: "期待的活动",
+        consent: "报名说明"
+      };
+
+      function showToast(message) {
+        clearTimeout(toastTimer);
+        toast.textContent = message;
+        toast.classList.add("is-visible");
+        toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2200);
+      }
+
+      function setError(message) {
+        errorSummary.textContent = message;
+        errorSummary.classList.add("is-visible");
+      }
+
+      function clearError() {
+        errorSummary.textContent = "";
+        errorSummary.classList.remove("is-visible");
+      }
+
+      function showStep(step, focusHeading = true) {
+        currentStep = step;
+        steps.forEach((section) => {
+          section.hidden = Number(section.dataset.step) !== step;
+        });
+        segments.forEach((segment, index) => {
+          segment.classList.toggle("is-complete", index + 1 < step);
+          segment.classList.toggle("is-active", index + 1 === step);
+        });
+        stepLabel.textContent = labels[step];
+        progressPercent.textContent = `${step * 33 + (step === 3 ? 1 : 0)}%`;
+        clearError();
+        document.querySelector(".form-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+        if (focusHeading) {
+          const activeStep = document.querySelector(`.step[data-step="${step}"]`);
+          const firstControl = activeStep.querySelector("input:not([type=hidden]), textarea, button");
+          setTimeout(() => firstControl?.focus({ preventScroll: true }), 220);
+        }
+      }
+
+      function valuesOf(name) {
+        return [...form.querySelectorAll(`input[name="${name}"]:checked`)].map((item) => item.value);
+      }
+
+      function validateStep(step) {
+        clearError();
+        const active = document.querySelector(`.step[data-step="${step}"]`);
+        const requiredInputs = [...active.querySelectorAll("[required]")];
+
+        for (const input of requiredInputs) {
+          if (input.type === "checkbox" || input.type === "radio") {
+            const group = input.name
+              ? [...active.querySelectorAll(`[name="${input.name}"]`)]
+              : [input];
+            if (!group.some((item) => item.checked)) {
+              const label = fieldLabels[input.name] || "必填项";
+              setError(`还差一项：请完成「${label}」后再继续。`);
+              input.focus({ preventScroll: true });
+              return false;
+            }
+          } else if (!String(input.value || "").trim()) {
+            const label = fieldLabels[input.name] || "必填项";
+            setError(`还差一项：请填写「${label}」后再继续。`);
+            input.focus({ preventScroll: true });
+            return false;
+          }
+        }
+
+        if (step === 2) {
+          if (!valuesOf("mentor").length) {
+            setError("请至少选择 1 个想加入的梦拓小组。");
+            mentorInputs[0]?.focus();
+            return false;
+          }
+          if (valuesOf("style").length === 0) {
+            setError("请至少选择 1 个你现在最常练习的方向。");
+            return false;
+          }
+        }
+
+        if (step === 3) {
+          if (!valuesOf("availability").length) {
+            setError("请至少选择 1 个通常能参加的时间。");
+            return false;
+          }
+          if (!valuesOf("activity").length) {
+            setError("请至少选择 1 个期待的小组活动。");
+            return false;
+          }
+          if (!valuesOf("match").length) {
+            setError("请选择是否接受相似方向调剂。");
+            return false;
+          }
+          if (!form.elements.consent.checked) {
+            setError("请先阅读并勾选报名说明。");
+            return false;
+          }
+        }
+
+        return true;
+      }
+
+      function collectSummary() {
+        const pickedMentors = valuesOf("mentor");
+        return [
+          "【2026 吉他梦拓成员报名】",
+          `姓名：${form.elements.name.value.trim()}`,
+          `学号：${form.elements.studentId.value.trim()}`,
+          `年级与学院：${form.elements.department.value.trim()}`,
+          `微信号：${form.elements.wechat.value.trim()}`,
+          `琴龄：${valuesOf("experience")[0] || "未填写"}`,
+          `常练方向：${valuesOf("style").join("、")}`,
+          `意向小组：${pickedMentors.join("；")}`,
+          `可参加时间：${valuesOf("availability").join("、")}`,
+          `期待活动：${valuesOf("activity").join("、")}`,
+          `调剂意愿：${valuesOf("match")[0]}`,
+          `想一起弹 / 想说的话：${noteInput.value.trim() || "暂无"}`,
+          "",
+          "我已知悉微信号仅用于本次梦拓活动联络。"
+        ].join("\n");
+      }
+
+      function collectRemotePayload() {
+        return {
+          name: form.elements.name.value.trim(),
+          student_id: form.elements.studentId.value.trim(),
+          department: form.elements.department.value.trim(),
+          wechat: form.elements.wechat.value.trim(),
+          experience: valuesOf("experience")[0],
+          styles: valuesOf("style"),
+          mentors: valuesOf("mentor"),
+          availability: valuesOf("availability"),
+          activities: valuesOf("activity"),
+          match_preference: valuesOf("match")[0],
+          note: noteInput.value.trim(),
+          consent: true
+        };
+      }
+
+      async function submitRemote(payload) {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 15000);
+        try {
+          const response = await fetch(remoteEndpoint, {
+            method: "POST",
+            signal: controller.signal,
+            headers: {
+              apikey: remoteConfig.publishableKey,
+              Authorization: `Bearer ${remoteConfig.publishableKey}`,
+              "Content-Type": "application/json",
+              Prefer: "return=minimal"
+            },
+            body: JSON.stringify(payload)
+          });
+          if (!response.ok) {
+            const detail = await response.text();
+            throw new Error(detail || `提交失败（${response.status}）`);
+          }
+        } finally {
+          clearTimeout(timeout);
+        }
+      }
+
+      function openResult(remoteSuccess) {
+        summaryBox.value = collectSummary();
+        if (remoteSuccess) {
+          resultKicker.textContent = "REGISTRATION / RECEIVED";
+          resultTitle.textContent = "报名已提交";
+          resultMessage.textContent = "我们已经收到你的报名信息。可以保留下面这份备份，梦拓匹配结果将通过你填写的微信号联系。";
+        } else {
+          resultKicker.textContent = "REGISTRATION / READY";
+          resultTitle.textContent = "你的报名信息已经整理好了";
+          resultMessage.textContent = "复制下面这段文字，发送给社长或你选择的梦拓即可完成本次报名。";
+        }
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "");
+        }
+      }
+
+      function saveDraft() {
+        const data = {};
+        new FormData(form).forEach((value, key) => {
+          if (data[key]) {
+            data[key] = Array.isArray(data[key]) ? [...data[key], value] : [data[key], value];
+          } else {
+            data[key] = value;
+          }
+        });
+        localStorage.setItem(storageKey, JSON.stringify(data));
+      }
+
+      function restoreDraft() {
+        try {
+          const data = JSON.parse(localStorage.getItem(storageKey) || "null");
+          if (!data) return;
+          for (const [key, value] of Object.entries(data)) {
+            const controls = [...form.querySelectorAll(`[name="${key}"]`)];
+            const values = Array.isArray(value) ? value : [value];
+            controls.forEach((control) => {
+              if (control.type === "checkbox" || control.type === "radio") {
+                control.checked = values.includes(control.value);
+              } else if (!control.value) {
+                control.value = value;
+              }
+            });
+          }
+          mentorCount.textContent = valuesOf("mentor").length;
+          noteCount.textContent = noteInput.value.length;
+        } catch (_) {
+          localStorage.removeItem(storageKey);
+        }
+      }
+
+      mentorInputs.forEach((input) => {
+        input.addEventListener("change", () => {
+          const selected = valuesOf("mentor");
+          if (selected.length > 2) {
+            input.checked = false;
+            showToast("最多选择 2 个梦拓小组");
+          }
+          mentorCount.textContent = valuesOf("mentor").length;
+          saveDraft();
+        });
+      });
+
+      noteInput.addEventListener("input", () => {
+        noteCount.textContent = noteInput.value.length;
+        saveDraft();
+      });
+
+      form.addEventListener("input", saveDraft);
+      form.addEventListener("change", saveDraft);
+
+      document.querySelectorAll("[data-next]").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (validateStep(currentStep)) {
+            showStep(Number(button.dataset.next));
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-prev]").forEach((button) => {
+        button.addEventListener("click", () => showStep(Number(button.dataset.prev)));
+      });
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!validateStep(3)) return;
+        if (submitting) return;
+
+        if (!remoteEnabled) {
+          openResult(false);
+          return;
+        }
+
+        submitting = true;
+        submitButton.disabled = true;
+        const originalLabel = submitButton.innerHTML;
+        submitButton.textContent = "正在提交报名信息…";
+        try {
+          await submitRemote(collectRemotePayload());
+          localStorage.removeItem(storageKey);
+          openResult(true);
+        } catch (error) {
+          const message =
+            error.name === "AbortError"
+              ? "提交超时，请检查网络后重试。已填写内容仍保留在本页。"
+              : "远程提交失败，请稍后重试。已填写内容仍保留在本页。";
+          setError(message);
+          setTimeout(() => errorSummary.scrollIntoView({ behavior: "smooth", block: "center" }), 20);
+        } finally {
+          submitting = false;
+          submitButton.disabled = false;
+          submitButton.innerHTML = originalLabel;
+        }
+      });
+
+      document.querySelector("#close-dialog").addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+
+      document.querySelector("#copy-summary").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(summaryBox.value);
+        } catch (_) {
+          summaryBox.select();
+          document.execCommand("copy");
+        }
+        showToast("已复制报名信息");
+      });
+
+      document.querySelector("#download-summary").addEventListener("click", () => {
+        const blob = new Blob([summaryBox.value], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = `吉他梦拓报名_${form.elements.name.value.trim() || "报名信息"}.txt`;
+        anchor.click();
+        URL.revokeObjectURL(url);
+        showToast("报名信息已下载");
+      });
+
+      restoreDraft();
+    })();
+  </script>
+</body>
+</html>
