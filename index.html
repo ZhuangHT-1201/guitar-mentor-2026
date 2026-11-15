@@ -655,8 +655,8 @@
     .mentor-body p {
       margin: 0 0 10px;
       color: rgba(243, 239, 228, 0.66);
-      font-size: 11px;
-      line-height: 1.6;
+      font-size: 12px;
+      line-height: 1.72;
     }
 
     .tags {
@@ -1076,14 +1076,14 @@
       </div>
 
       <div class="story-facts" aria-label="报名概况">
-        <div class="fact"><strong>06</strong><span>候选梦拓小组<br>不同风格，各自开场</span></div>
-        <div class="fact"><strong>3 min</strong><span>预计填写时间<br>三步完成音乐匹配</span></div>
-        <div class="fact"><strong>2 picks</strong><span>最多选择两组<br>也可接受相似方向调剂</span></div>
+        <div class="fact"><strong>6 个</strong><span>梦拓小组<br>不同风格，各自开场</span></div>
+        <div class="fact"><strong>不限</strong><span>意向选择<br>喜欢的小组都可以选</span></div>
+        <div class="fact"><strong>双向</strong><span>确认加入<br>社团会联系对应梦拓</span></div>
       </div>
 
       <div class="story-footer">
-        <span>你的信息只用于本次活动匹配</span>
-        <a href="#registration-form">直接填写报名问卷 →</a>
+        <span>你的信息仅用于本次梦拓联络</span>
+        <a href="#">先看今年的梦拓 →</a>
       </div>
     </aside>
 
@@ -1093,7 +1093,7 @@
           <p class="form-kicker">Member Registration / 2026</p>
           <h2 id="form-title">2026 梦拓成员报名</h2>
         </div>
-        <span class="time-chip">约 3 分钟</span>
+        <span class="time-chip">选择小组不限数量</span>
       </header>
 
       <div class="progress-wrap" aria-label="填写进度">
@@ -1122,11 +1122,16 @@
             </div>
             <div class="field">
               <label for="student-id">学号<span class="required">*</span></label>
-              <input class="text-input" id="student-id" name="studentId" type="text" inputmode="numeric" autocomplete="off" placeholder="如 2026xxxxxx" required>
+              <input class="text-input" id="student-id" name="studentId" type="text" autocomplete="off" placeholder="如 24371000" required>
+              <small>研究生学号含字母也可直接填写。</small>
             </div>
-            <div class="field full">
-              <label for="department">年级与学院<span class="required">*</span></label>
-              <input class="text-input" id="department" name="department" type="text" autocomplete="organization-title" placeholder="如 26级 计算机学院" required>
+            <div class="field">
+              <label for="grade">年级<span class="required">*</span></label>
+              <input class="text-input" id="grade" name="grade" type="text" autocomplete="off" placeholder="如 2024级" required>
+            </div>
+            <div class="field">
+              <label for="college">学院全称<span class="required">*</span></label>
+              <input class="text-input" id="college" name="college" type="text" autocomplete="organization-title" placeholder="如 计算机学院" required>
             </div>
             <div class="field full">
               <label for="wechat">可添加的微信号<span class="required">*</span></label>
@@ -1137,7 +1142,7 @@
 
           <div class="form-actions">
             <span></span>
-            <button class="button primary" type="button" data-next="2">下一步：选一种声音 <span class="arrow" aria-hidden="true">→</span></button>
+            <button class="button primary" type="button" data-next="2">下一步：选择你的小组 <span class="arrow" aria-hidden="true">→</span></button>
           </div>
         </section>
 
@@ -1169,8 +1174,8 @@
           </fieldset>
 
           <fieldset class="reveal" id="mentor-field">
-            <legend>想加入哪两个梦拓小组<span class="required">*</span></legend>
-            <p class="hint">最多选 2 个。不是面试志愿，我们会优先结合你的风格与可参加时段做匹配。</p>
+            <legend>想加入哪些梦拓小组<span class="required">*</span></legend>
+            <p class="hint">数量不限。社团会把你的选择告诉对应梦拓，再由梦拓确认是否接纳；你也可以同时选择多个小组。</p>
             <div class="mentor-grid">
               <label class="mentor-card">
                 <input type="checkbox" name="mentor" value="曾子焱｜小众哥组">
@@ -1181,7 +1186,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>曾子焱</strong><span>小众哥组</span></div>
-                  <p>电吉他、和声色彩与风格实验。让认真喜欢，不必成为一个人的事。</p>
+                  <p>四年电吉他经验，喜欢 Blues、Jazz、Funk 与 Rock。想和愿意探索和声、riff 与音色的人一起排练，也可以只是找一个地方把喜欢的冷门作品弹完。不要求你“小众”，只希望彼此尊重不同的音乐喜好。</p>
                   <div class="tags"><span class="tag">电吉他</span><span class="tag">Blues</span><span class="tag">Jazz</span><span class="tag">Funk</span></div>
                 </div>
               </label>
@@ -1195,7 +1200,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>何林达</strong><span>指弹弹唱</span></div>
-                  <p>六年琴龄，可做入门教学、小白答疑与曲目改编交流。</p>
+                  <p>六年琴龄，指弹与弹唱都会一些，偏爱 R&amp;B、Pop、Jazz，也喜欢把喜爱的歌曲改编成自己的版本。可提供入门教学、基础答疑、曲目排练和练琴经验交流。</p>
                   <div class="tags"><span class="tag">指弹</span><span class="tag">弹唱</span><span class="tag">R&amp;B</span><span class="tag">Jazz</span></div>
                 </div>
               </label>
@@ -1209,7 +1214,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>孙铭扬</strong><span>风格分享</span></div>
-                  <p>木电双修，喜欢流行、R&amp;B、摇滚与布鲁斯，也愿意分享教学经验。</p>
+                  <p>四年琴龄，木吉他和电吉他都弹，常玩流行、R&amp;B、摇滚与布鲁斯，也有一定的乐器教学经验。适合想一起拆解风格、练习技巧，或希望有人帮着梳理练习方法的人。</p>
                   <div class="tags"><span class="tag">Pop</span><span class="tag">R&amp;B</span><span class="tag">Rock</span><span class="tag">技巧分享</span></div>
                 </div>
               </label>
@@ -1223,7 +1228,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>刘子锐</strong><span>民谣同好</span></div>
-                  <p>七年民谣经验，喜欢宋冬野、赵雷，想找同好一起练琴与交流。</p>
+                  <p>七年民谣经验，主要喜欢宋冬野、赵雷等歌手的作品，想和兴趣相近的朋友一起练琴、交流，也期待在小组内部完成小型演出。</p>
                   <div class="tags"><span class="tag">民谣</span><span class="tag">弹唱</span><span class="tag">宋冬野</span><span class="tag">赵雷</span></div>
                 </div>
               </label>
@@ -1237,7 +1242,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>马文馨</strong><span>古典慢练</span></div>
-                  <p>八年古典吉他经历，可约周五晚间 1–2 小时一起练琴。</p>
+                  <p>八年古典吉他经历，也会一点民谣。通常能在周五晚上留出 1–2 小时练琴，适合愿意慢下来处理基础、音色和完整曲目的同学。</p>
                   <div class="tags"><span class="tag">古典吉他</span><span class="tag">基础练习</span><span class="tag">周五晚</span></div>
                 </div>
               </label>
@@ -1251,7 +1256,7 @@
                 </span>
                 <div class="mentor-body">
                   <div class="mentor-name"><strong>吴寻钟</strong><span>流行指弹</span></div>
-                  <p>指弹、弹唱与高还原度流行改编，也想组乐队、办小型演出。</p>
+                  <p>计算机学院 26 级硕士新生，五年以上琴龄，喜欢指弹、弹唱与高还原度流行歌曲改编。希望和同好一起练琴，也想尝试组乐队、做技巧分享和小组演出。</p>
                   <div class="tags"><span class="tag">指弹</span><span class="tag">流行改编</span><span class="tag">乐队</span><span class="tag">演出</span></div>
                 </div>
               </label>
@@ -1260,14 +1265,14 @@
 
           <div class="form-actions">
             <button class="button ghost" type="button" data-prev="1">返回</button>
-            <span class="selection-count">已选 <strong id="mentor-count">0</strong> / 2 个小组</span>
-            <button class="button primary" type="button" data-next="3">下一步：约个时间 <span class="arrow" aria-hidden="true">→</span></button>
+            <span class="selection-count">已选 <strong id="mentor-count">0</strong> 个小组</span>
+            <button class="button primary" type="button" data-next="3">下一步：填写时间 <span class="arrow" aria-hidden="true">→</span></button>
           </div>
         </section>
 
         <section class="step" data-step="3" aria-labelledby="step-3-title" hidden>
-          <h3 id="step-3-title" class="visually-hidden">时间与匹配</h3>
-          <p class="step-intro">最后一步，帮我们把“喜欢”落到一个真的能见面的时段里。</p>
+          <h3 id="step-3-title" class="visually-hidden">联络偏好</h3>
+          <p class="step-intro">留下方便参加活动的时间和你期待的活动形式。</p>
 
           <fieldset class="reveal" id="availability-field">
             <legend>你通常能参加的时间<span class="required">*</span></legend>
@@ -1294,15 +1299,6 @@
             </div>
           </fieldset>
 
-          <fieldset class="reveal" id="match-field">
-            <legend>如果首选小组满员，接受相似方向调剂吗<span class="required">*</span></legend>
-            <div class="choice-row">
-              <label class="choice"><input type="radio" name="match" value="愿意调剂" required>愿意，优先帮我找到合适的小组</label>
-              <label class="choice"><input type="radio" name="match" value="先沟通">先和我沟通再决定</label>
-              <label class="choice"><input type="radio" name="match" value="不考虑调剂">只考虑我选择的小组</label>
-            </div>
-          </fieldset>
-
           <div class="field reveal">
             <label for="note">想一起弹的一首歌，或想对新伙伴说的话</label>
             <textarea class="text-area" id="note" name="note" maxlength="300" placeholder="比如：想一起练《晴天》；还是新手，希望能有人带着走完第一首完整的歌。"></textarea>
@@ -1313,7 +1309,7 @@
             <legend class="hint">报名说明</legend>
             <label class="choice" style="width: 100%; border-radius: 14px; align-items: flex-start; line-height: 1.6;">
               <input type="checkbox" name="consent" required>
-              <span>我知悉微信号将提供给本次活动的梦拓，仅用于活动联络；若最终未匹配到小组，社团将只保留必要的报名记录。</span>
+              <span>我知悉微信号将提供给本次希望加入的梦拓，仅用于活动联络；最终是否加入由梦拓确认。</span>
             </label>
           </fieldset>
 
@@ -1346,13 +1342,13 @@
     </div>
   </dialog>
 
-  <script src="supabase-config.js?v=20261115-1"></script>
+  <script src="supabase-config.js?v=20261115-2"></script>
   <script>
     (() => {
       const remoteConfig = window.GUITAR_MENTOR_SUPABASE || {};
       const remoteEnabled = Boolean(remoteConfig.url && remoteConfig.publishableKey);
       const remoteEndpoint = remoteEnabled
-        ? `${remoteConfig.url.replace(/\/$/, "")}/rest/v1/guitar_mentor_registrations`
+        ? `${remoteConfig.url.replace(/\/$/, "")}/rest/v1/guitar_mentor_entries`
         : "";
       const form = document.querySelector("#registration-form");
       const steps = [...document.querySelectorAll(".step")];
@@ -1384,14 +1380,15 @@
 
       const labels = {
         1: "第 1 步，共 3 步 · 先认识你",
-        2: "第 2 步，共 3 步 · 选一种声音",
-        3: "第 3 步，共 3 步 · 约个时间"
+        2: "第 2 步，共 3 步 · 选择梦拓小组",
+        3: "第 3 步，共 3 步 · 留下联络偏好"
       };
 
       const fieldLabels = {
         name: "姓名",
         studentId: "学号",
-        department: "年级与学院",
+        grade: "年级",
+        college: "学院全称",
         wechat: "微信号",
         mentor: "梦拓小组",
         style: "练习方向",
@@ -1486,10 +1483,6 @@
             setError("请至少选择 1 个期待的小组活动。");
             return false;
           }
-          if (!valuesOf("match").length) {
-            setError("请选择是否接受相似方向调剂。");
-            return false;
-          }
           if (!form.elements.consent.checked) {
             setError("请先阅读并勾选报名说明。");
             return false;
@@ -1505,14 +1498,14 @@
           "【2026 吉他梦拓成员报名】",
           `姓名：${form.elements.name.value.trim()}`,
           `学号：${form.elements.studentId.value.trim()}`,
-          `年级与学院：${form.elements.department.value.trim()}`,
+          `年级：${form.elements.grade.value.trim()}`,
+          `学院全称：${form.elements.college.value.trim()}`,
           `微信号：${form.elements.wechat.value.trim()}`,
           `琴龄：${valuesOf("experience")[0] || "未填写"}`,
           `常练方向：${valuesOf("style").join("、")}`,
           `意向小组：${pickedMentors.join("；")}`,
           `可参加时间：${valuesOf("availability").join("、")}`,
           `期待活动：${valuesOf("activity").join("、")}`,
-          `调剂意愿：${valuesOf("match")[0]}`,
           `想一起弹 / 想说的话：${noteInput.value.trim() || "暂无"}`,
           "",
           "我已知悉微信号仅用于本次梦拓活动联络。"
@@ -1523,14 +1516,14 @@
         return {
           name: form.elements.name.value.trim(),
           student_id: form.elements.studentId.value.trim(),
-          department: form.elements.department.value.trim(),
+          grade: form.elements.grade.value.trim(),
+          college: form.elements.college.value.trim(),
           wechat: form.elements.wechat.value.trim(),
           experience: valuesOf("experience")[0],
           styles: valuesOf("style"),
           mentors: valuesOf("mentor"),
           availability: valuesOf("availability"),
           activities: valuesOf("activity"),
-          match_preference: valuesOf("match")[0],
           note: noteInput.value.trim(),
           consent: true
         };
@@ -1565,7 +1558,7 @@
         if (remoteSuccess) {
           resultKicker.textContent = "REGISTRATION / RECEIVED";
           resultTitle.textContent = "报名已提交";
-          resultMessage.textContent = "我们已经收到你的报名信息。可以保留下面这份备份，梦拓匹配结果将通过你填写的微信号联系。";
+          resultMessage.textContent = "我们已经收到你的报名信息。社团会把你的选择告知对应梦拓，最终是否加入由梦拓确认。";
         } else {
           resultKicker.textContent = "REGISTRATION / READY";
           resultTitle.textContent = "你的报名信息已经整理好了";
@@ -1614,11 +1607,6 @@
 
       mentorInputs.forEach((input) => {
         input.addEventListener("change", () => {
-          const selected = valuesOf("mentor");
-          if (selected.length > 2) {
-            input.checked = false;
-            showToast("最多选择 2 个梦拓小组");
-          }
           mentorCount.textContent = valuesOf("mentor").length;
           saveDraft();
         });
